@@ -4,7 +4,7 @@ from zipfile import ZipFile
 import tensorflow as tf
 import time
 from pathlib import Path
-from src.chicken_project.entity.config_entity import PrepareCallbacksConfig:
+from src.chicken_project.entity.config_entity import PrepareCallbacksConfig
 
 
 
