@@ -6,6 +6,8 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..
 
 # Add the project root to the Python path
 sys.path.insert(0, project_root)
+
+from src.chicken_project.exception import CustomException
 from src.chicken_project.config.configuration import ConfigurationManager
 from src.chicken_project.components.evaluation import Evaluation
 from src.chicken_project import logger
@@ -37,5 +39,4 @@ if __name__ == '__main__':
         obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
-        logger.exception(e)
-        raise e
+        raise CustomException(e, sys)
