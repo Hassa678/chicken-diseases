@@ -75,7 +75,5 @@ class Training:
             callbacks=callback_list
         )
 
-        self.save_model(
-            path=self.config.trained_model_path,
-            model=self.model
-        )
+        for path in [self.config.trained_model_path, 'model/model.h5']:
+            self.save_model(path=path, model=self.model)
