@@ -126,6 +126,7 @@ open up you local host and port
     AWS_SECRET_ACCESS_KEY=
 
     AWS_REGION = eu-north-1
+	#
 
     AWS_ECR_LOGIN_URI = 
 
